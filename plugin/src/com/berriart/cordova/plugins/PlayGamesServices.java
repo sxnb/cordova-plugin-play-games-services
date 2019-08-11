@@ -81,7 +81,7 @@ public class PlayGamesServices extends CordovaPlugin implements GameHelperListen
         googlePlayServicesReturnCode = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(cordovaActivity);
 
         if (googlePlayServicesReturnCode == ConnectionResult.SUCCESS) {
-            gameHelper = new GameHelper(cordovaActivity, BaseGameActivity.CLIENT_GAMES);
+            gameHelper = new GameHelper(cordovaActivity, GameHelper.CLIENT_GAMES);
             gameHelper.setup(this);
         } else {
             Log.w(LOGTAG, String.format("GooglePlayServices not available. Error: '" +
@@ -278,7 +278,7 @@ public class PlayGamesServices extends CordovaPlugin implements GameHelperListen
                             public void onResult(Leaderboards.LoadPlayerScoreResult playerScoreResult) {
                                 if (playerScoreResult.getStatus().isSuccess()) {
                                     LeaderboardScore score = playerScoreResult.getScore();
-                                    
+
                                     if (score != null) {
                                         try {
                                             JSONObject result = new JSONObject();

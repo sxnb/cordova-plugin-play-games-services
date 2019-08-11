@@ -18,6 +18,7 @@
     </engines>
 
     <js-module src="www/play-games-services.js" name="PlayGamesServices">
+        <clobbers target="cordova.plugins.playGamesServices" />
         <clobbers target="window.plugins.playGamesServices" />
     </js-module>
 
@@ -51,7 +52,6 @@
 
         <source-file src="src/com/berriart/cordova/plugins/PlayGamesServices.java" target-dir="src/com/berriart/cordova/plugins/" />
         <source-file src="src/com/berriart/cordova/plugins/BaseGameUtils.java" target-dir="src/com/berriart/cordova/plugins/" />
-        <source-file src="src/com/berriart/cordova/plugins/BaseGameActivity.java" target-dir="src/com/berriart/cordova/plugins/" />
         <source-file src="src/com/berriart/cordova/plugins/GameHelper.java" target-dir="src/com/berriart/cordova/plugins/" />
         <source-file src="src/com/berriart/cordova/plugins/GameHelperUtils.java" target-dir="src/com/berriart/cordova/plugins/" />
      </platform>
