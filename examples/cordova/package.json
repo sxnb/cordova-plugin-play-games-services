@@ -24,7 +24,9 @@
     "plugins": {
       "cordova-plugin-whitelist": {},
       "cordova-plugin-play-games-services": {
-        "APP_ID": "479111686486"
+        "APP_ID": "479111686486",
+        "ANDROID_PLAY_SERVICES_GAMES_VERSION": "+",
+        "ANDROID_PLAY_SERVICES_PLUS_VERSION": "+"
       }
     },
     "platforms": [

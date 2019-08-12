@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [1.1.2] - 2019-08-12
+
+### Added
+
+- Add ability to indicate Google Services library versions
+
 ## [1.1.1] - 2019-08-11
 
 ### Fixed
