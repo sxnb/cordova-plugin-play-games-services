@@ -24,11 +24,11 @@
 
     <!-- android -->
     <platform name="android">
-        <framework src="com.google.android.gms:play-services-games:$ANDROID_PLAY_SERVICES_GAMES_VERSION" />
+        <framework src="com.google.android.gms:play-services-games:18.0.1" />
         <framework src="com.google.android.gms:play-services-plus:$ANDROID_PLAY_SERVICES_PLUS_VERSION" />
 
         <preference name="APP_ID" />
-        <preference name="ANDROID_PLAY_SERVICES_GAMES_VERSION" default="+"/>
+        <preference name="ANDROID_PLAY_SERVICES_GAMES_VERSION" default="18.0.1"/>
         <preference name="ANDROID_PLAY_SERVICES_PLUS_VERSION" default="+"/>
 
         <config-file target="res/xml/config.xml" parent="/*">
